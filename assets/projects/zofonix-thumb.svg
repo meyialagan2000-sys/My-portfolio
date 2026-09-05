@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="fBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131217"/>
+      <stop offset="100%" stop-color="#2C2A3D"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#fBg)"/>
+
+  <rect x="0" y="0" width="400" height="26" fill="#ffffff" opacity="0.06"/>
+  <circle cx="16" cy="13" r="4" fill="#403BFE"/>
+  <circle cx="30" cy="13" r="4" fill="#8B86FF"/>
+  <circle cx="44" cy="13" r="4" fill="#5A5870"/>
+  <rect x="70" y="7" width="180" height="12" rx="6" fill="#ffffff" opacity="0.12"/>
+
+  <!-- headline -->
+  <rect x="28" y="46" width="190" height="14" rx="4" fill="#ffffff" opacity="0.85"/>
+  <rect x="28" y="68" width="150" height="10" rx="4" fill="#ffffff" opacity="0.4"/>
+  <rect x="28" y="92" width="96" height="24" rx="12" fill="#403BFE"/>
+
+  <!-- growth chart card -->
+  <rect x="228" y="42" width="144" height="92" rx="10" fill="#1B1A24"/>
+  <polyline points="240,110 262,96 284,102 306,78 328,86 350,58 362,64" fill="none" stroke="#8B86FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="362" cy="64" r="4" fill="#8B86FF"/>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="28" y="150" width="105" height="66" rx="10" fill="#1B1A24"/>
+    <rect x="42" y="164" width="40" height="10" rx="4" fill="#403BFE"/>
+    <rect x="42" y="186" width="70" height="8" rx="4" fill="#ffffff" opacity="0.35"/>
+  </g>
+  <g>
+    <rect x="147" y="150" width="105" height="66" rx="10" fill="#1B1A24"/>
+    <rect x="161" y="164" width="40" height="10" rx="4" fill="#8B86FF"/>
+    <rect x="161" y="186" width="70" height="8" rx="4" fill="#ffffff" opacity="0.35"/>
+  </g>
+  <g>
+    <rect x="266" y="150" width="106" height="66" rx="10" fill="#1B1A24"/>
+    <rect x="280" y="164" width="40" height="10" rx="4" fill="#B9C3FF"/>
+    <rect x="280" y="186" width="70" height="8" rx="4" fill="#ffffff" opacity="0.35"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="zBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E9EEF3"/>
+      <stop offset="100%" stop-color="#F4F1EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#zBg)"/>
+
+  <rect x="0" y="0" width="400" height="26" fill="#ffffff" opacity="0.65"/>
+  <circle cx="16" cy="13" r="4" fill="#2C2A3D"/>
+  <circle cx="30" cy="13" r="4" fill="#8C8A9C"/>
+  <circle cx="44" cy="13" r="4" fill="#C7C5D3"/>
+  <rect x="70" y="7" width="180" height="12" rx="6" fill="#ffffff"/>
+
+  <!-- nav bar -->
+  <rect x="28" y="42" width="344" height="30" rx="8" fill="#ffffff" opacity="0.9"/>
+  <circle cx="46" cy="57" r="7" fill="#2C2A3D"/>
+  <rect x="150" y="53" width="40" height="8" rx="4" fill="#131217" opacity="0.35"/>
+  <rect x="200" y="53" width="40" height="8" rx="4" fill="#131217" opacity="0.35"/>
+  <rect x="250" y="53" width="40" height="8" rx="4" fill="#131217" opacity="0.35"/>
+  <rect x="316" y="49" width="44" height="16" rx="8" fill="#2C2A3D"/>
+
+  <!-- hero -->
+  <rect x="28" y="90" width="170" height="14" rx="4" fill="#2C2A3D" opacity="0.6"/>
+  <rect x="28" y="112" width="140" height="14" rx="4" fill="#2C2A3D" opacity="0.6"/>
+  <rect x="28" y="136" width="200" height="9" rx="4" fill="#2C2A3D" opacity="0.25"/>
+  <rect x="28" y="158" width="92" height="24" rx="12" fill="#2C2A3D"/>
+
+  <rect x="240" y="90" width="132" height="92" rx="10" fill="#D7DEE6"/>
+  <circle cx="306" cy="126" r="20" fill="#ffffff" opacity="0.8"/>
+
+  <!-- service cards -->
+  <g>
+    <rect x="28" y="200" width="105" height="34" rx="8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="46" cy="217" r="8" fill="#2C2A3D"/>
+    <rect x="60" y="212" width="60" height="7" rx="3" fill="#131217" opacity="0.3"/>
+  </g>
+  <g>
+    <rect x="147" y="200" width="105" height="34" rx="8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="165" cy="217" r="8" fill="#2C2A3D"/>
+    <rect x="179" y="212" width="60" height="7" rx="3" fill="#131217" opacity="0.3"/>
+  </g>
+  <g>
+    <rect x="266" y="200" width="106" height="34" rx="8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="284" cy="217" r="8" fill="#2C2A3D"/>
+    <rect x="298" y="212" width="60" height="7" rx="3" fill="#131217" opacity="0.3"/>
+  </g>
+</svg>

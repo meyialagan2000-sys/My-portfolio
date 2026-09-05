@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Meiyazhagan R</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#403BFE">
+<style>
+  .project-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px; }
+  @media (max-width:800px){ .project-grid{ grid-template-columns:1fr; } }
+  .project-card{ border:1px solid var(--line); border-radius:14px; overflow:hidden; background:var(--bg-alt); transition:transform .3s ease, box-shadow .3s ease; }
+  .project-card:hover{ transform:translateY(-6px); box-shadow:0 24px 48px -24px rgba(19,18,23,0.18); }
+  .project-thumb{ aspect-ratio:16/10; display:flex; align-items:center; justify-content:center; position:relative; }
+  .project-body{ padding:30px; }
+  .project-body .cat{ color:var(--accent); font-size:0.78rem; font-weight:700; letter-spacing:0.02em; }
+  .project-body h3{ font-size:1.3rem; margin:12px 0 12px; }
+  .project-body p{ color:var(--muted); font-size:0.94rem; margin-bottom:20px; }
+  .project-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+  .project-tags span{ font-size:0.76rem; color:var(--muted); border:1px solid var(--line); padding:5px 12px; border-radius:14px; }
+  .lock-badge{ position:absolute; top:16px; right:16px; background:rgba(19,18,23,0.5); backdrop-filter:blur(6px); color:#fff; font-size:0.72rem; padding:6px 12px; border-radius:20px; display:flex; align-items:center; gap:6px; }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="index.html" class="brand"><span class="mark">M</span> Meiyazhagan R</a>
+    <div class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Let's talk</a>
+    <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="tight" style="padding-top:56px;">
+    <div class="wrap reveal">
+      <div class="kicker"><span class="bar"></span>Projects</div>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.4rem); max-width:760px;">Live builds & client work.</h1>
+      <p style="color:var(--muted); margin-top:20px; max-width:560px; font-size:1.05rem;">
+        The two Shopify stores below are still in development and sit behind
+        a preview password — hit "View live preview" and it unlocks
+        automatically, same as typing the password in yourself.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker"><span class="bar"></span>Shopify</div>
+        <h2>In-progress storefronts.</h2>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="lock-badge">🔒 Password protected</span>
+            <img src="assets/projects/glowza-thumb.svg" alt="Glowza beauty & wellness storefront preview" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <span class="cat">SHOPIFY · BEAUTY & WELLNESS</span>
+            <h3>Glowza</h3>
+            <p>A beauty and wellness storefront built around a scalable section structure, so new product lines and collections can be added without touching the core theme.</p>
+            <div class="project-tags"><span>Liquid</span><span>Shopify</span><span>Custom Sections</span></div>
+            <button class="btn btn-primary btn-sm" onclick="openProject('https://glowza-rvaifqzt.myshopify.com/','peedra')">View live preview</button>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb">
+            <span class="lock-badge">🔒 Password protected</span>
+            <img src="assets/projects/storebase-thumb.svg" alt="Store Base 02 storefront preview" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <span class="cat">SHOPIFY · CONCEPT STORE</span>
+            <h3>Store Base 02</h3>
+            <p>A second concept build focused on balancing rich merchandising layouts against page speed — the two things that usually fight each other on Shopify.</p>
+            <div class="project-tags"><span>Liquid</span><span>Shopify</span><span>Performance</span></div>
+            <button class="btn btn-primary btn-sm" onclick="openProject('https://project-store-dmciwphg.myshopify.com/','rtowyu')">View live preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker"><span class="bar"></span>WordPress</div>
+        <h2>Client websites.</h2>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <img src="assets/projects/zenora-thumb.svg" alt="Zenora WordPress service business site preview" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <span class="cat">WORDPRESS · SERVICE BUSINESS</span>
+            <h3>Zenora</h3>
+            <p>A responsive, service-focused business website — built to load fast and read clearly on mobile, where most of the traffic lands first.</p>
+            <div class="project-tags"><span>WordPress</span><span>Responsive Design</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb">
+            <img src="assets/projects/zofonix-thumb.svg" alt="Zofonix digital marketing agency site preview" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <span class="cat">WORDPRESS · AGENCY SITE</span>
+            <h3>Zofonix</h3>
+            <p>Built and customized the company's own digital marketing website — the site the Zofonix team uses to bring in their own clients.</p>
+            <div class="project-tags"><span>WordPress</span><span>Branding</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap reveal cta-block" style="background:var(--ink);">
+      <div>
+        <h2 style="color:#fff; font-size:clamp(1.6rem,3.5vw,2.2rem);">Got a store to build?</h2>
+        <p style="color:#B7B6C2; margin-top:10px;">I'm currently open to new freelance and full-time work.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand"><span class="mark">M</span> Meiyazhagan R</div>
+        <p>Shopify theme developer & web builder based in Tamil Nadu, India.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:meyialagan2000@gmail.com">meyialagan2000@gmail.com</a>
+          <a href="tel:+918668121239">+91 86681 21239</a>
+          <a href="https://www.linkedin.com/in/meiyazhaganrajendran/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year"></span> Meiyazhagan R. All rights reserved.</span>
+      <span>Tamil Nadu, India</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toTop" aria-label="Back to top">↑</div>
+<script src="js/main.js"></script>
+</body>
+</html>
