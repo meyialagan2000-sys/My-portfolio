@@ -17,7 +17,8 @@
   @media (max-width:800px){ .project-grid{ grid-template-columns:1fr; } }
   .project-card{ border:1px solid var(--line); border-radius:14px; overflow:hidden; background:var(--bg-alt); transition:transform .3s ease, box-shadow .3s ease; }
   .project-card:hover{ transform:translateY(-6px); box-shadow:0 24px 48px -24px rgba(19,18,23,0.18); }
-  .project-thumb{ aspect-ratio:16/10; display:flex; align-items:center; justify-content:center; position:relative; }
+  .project-thumb{ aspect-ratio:16/10; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+  .project-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
   .project-body{ padding:30px; }
   .project-body .cat{ color:var(--accent); font-size:0.78rem; font-weight:700; letter-spacing:0.02em; }
   .project-body h3{ font-size:1.3rem; margin:12px 0 12px; }
@@ -25,6 +26,7 @@
   .project-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
   .project-tags span{ font-size:0.76rem; color:var(--muted); border:1px solid var(--line); padding:5px 12px; border-radius:14px; }
   .lock-badge{ position:absolute; top:16px; right:16px; background:rgba(19,18,23,0.5); backdrop-filter:blur(6px); color:#fff; font-size:0.72rem; padding:6px 12px; border-radius:20px; display:flex; align-items:center; gap:6px; }
+  .live-badge{ position:absolute; top:16px; right:16px; background:rgba(46,163,101,0.85); backdrop-filter:blur(6px); color:#fff; font-size:0.72rem; padding:6px 12px; border-radius:20px; display:flex; align-items:center; gap:6px; }
 </style>
 </head>
 <body>
@@ -72,7 +74,7 @@
         <div class="project-card reveal">
           <div class="project-thumb">
             <span class="lock-badge">🔒 Password protected</span>
-            <img src="assets/projects/glowza-thumb.svg" alt="Glowza beauty & wellness storefront preview" style="width:100%; height:100%; object-fit:cover;">
+            <img src="assets/projects/glowza-thumb.svg" alt="Glowza beauty & wellness storefront preview">
           </div>
           <div class="project-body">
             <span class="cat">SHOPIFY · BEAUTY & WELLNESS</span>
@@ -86,7 +88,7 @@
         <div class="project-card reveal reveal-delay-1">
           <div class="project-thumb">
             <span class="lock-badge">🔒 Password protected</span>
-            <img src="assets/projects/storebase-thumb.svg" alt="Store Base 02 storefront preview" style="width:100%; height:100%; object-fit:cover;">
+            <img src="assets/projects/storebase-thumb.svg" alt="Store Base 02 storefront preview">
           </div>
           <div class="project-body">
             <span class="cat">SHOPIFY · CONCEPT STORE</span>
@@ -110,26 +112,29 @@
       <div class="project-grid">
         <div class="project-card reveal">
           <div class="project-thumb">
-            <link rel="stylesheet" href="https://zenoraretreat.com/" />
-            <img src="assets/projects/zenora-thumb.svg" alt="Zenora WordPress service business site preview" style="width:100%; height:100%; object-fit:cover;">
+            <span class="live-badge">🟢 Live</span>
+            <img src="assets/projects/zenora-thumb.svg" alt="Zenora WordPress service business site preview">
           </div>
           <div class="project-body">
             <span class="cat">WORDPRESS · SERVICE BUSINESS</span>
             <h3>Zenora</h3>
             <p>A responsive, service-focused business website — built to load fast and read clearly on mobile, where most of the traffic lands first.</p>
             <div class="project-tags"><span>WordPress</span><span>Responsive Design</span></div>
+            <a href="https://zenoraretreat.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit live site</a>
           </div>
         </div>
 
         <div class="project-card reveal reveal-delay-1">
           <div class="project-thumb">
-            <img src="assets/projects/zofonix-thumb.svg" alt="Zofonix digital marketing agency site preview" style="width:100%; height:100%; object-fit:cover;">
+            <span class="live-badge">🟢 Live</span>
+            <img src="assets/projects/zofonix-thumb.svg" alt="Zofonix digital marketing agency site preview">
           </div>
           <div class="project-body">
             <span class="cat">WORDPRESS · AGENCY SITE</span>
             <h3>Zofonix</h3>
             <p>Built and customized the company's own digital marketing website — the site the Zofonix team uses to bring in their own clients.</p>
             <div class="project-tags"><span>WordPress</span><span>Branding</span></div>
+            <a href="https://zofonix.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit live site</a>
           </div>
         </div>
       </div>
