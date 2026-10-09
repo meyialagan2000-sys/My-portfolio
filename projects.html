@@ -17,8 +17,7 @@
   @media (max-width:800px){ .project-grid{ grid-template-columns:1fr; } }
   .project-card{ border:1px solid var(--line); border-radius:14px; overflow:hidden; background:var(--bg-alt); transition:transform .3s ease, box-shadow .3s ease; }
   .project-card:hover{ transform:translateY(-6px); box-shadow:0 24px 48px -24px rgba(19,18,23,0.18); }
-  .project-thumb{ aspect-ratio:16/10; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
-  .project-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .project-thumb{ aspect-ratio:16/10; display:flex; align-items:center; justify-content:center; position:relative; }
   .project-body{ padding:30px; }
   .project-body .cat{ color:var(--accent); font-size:0.78rem; font-weight:700; letter-spacing:0.02em; }
   .project-body h3{ font-size:1.3rem; margin:12px 0 12px; }
@@ -26,7 +25,6 @@
   .project-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
   .project-tags span{ font-size:0.76rem; color:var(--muted); border:1px solid var(--line); padding:5px 12px; border-radius:14px; }
   .lock-badge{ position:absolute; top:16px; right:16px; background:rgba(19,18,23,0.5); backdrop-filter:blur(6px); color:#fff; font-size:0.72rem; padding:6px 12px; border-radius:20px; display:flex; align-items:center; gap:6px; }
-  .live-badge{ position:absolute; top:16px; right:16px; background:rgba(46,163,101,0.85); backdrop-filter:blur(6px); color:#fff; font-size:0.72rem; padding:6px 12px; border-radius:20px; display:flex; align-items:center; gap:6px; }
 </style>
 </head>
 <body>
@@ -56,7 +54,7 @@
       <div class="kicker"><span class="bar"></span>Projects</div>
       <h1 style="font-size:clamp(2.2rem,5vw,3.4rem); max-width:760px;">Live builds & client work.</h1>
       <p style="color:var(--muted); margin-top:20px; max-width:560px; font-size:1.05rem;">
-        The two Shopify stores below are still in development and sit behind
+        The Shopify stores below are still in development and sit behind
         a preview password — hit "View live preview" and it unlocks
         automatically, same as typing the password in yourself.
       </p>
@@ -74,7 +72,7 @@
         <div class="project-card reveal">
           <div class="project-thumb">
             <span class="lock-badge">🔒 Password protected</span>
-            <img src="assets/projects/glowza-thumb.svg" alt="Glowza beauty & wellness storefront preview">
+            <img src="assets/projects/glowza-thumb.svg" alt="Glowza beauty & wellness storefront preview" style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="project-body">
             <span class="cat">SHOPIFY · BEAUTY & WELLNESS</span>
@@ -88,7 +86,7 @@
         <div class="project-card reveal reveal-delay-1">
           <div class="project-thumb">
             <span class="lock-badge">🔒 Password protected</span>
-            <img src="assets/projects/storebase-thumb.svg" alt="Store Base 02 storefront preview">
+            <img src="assets/projects/storebase-thumb.svg" alt="Store Base 02 storefront preview" style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="project-body">
             <span class="cat">SHOPIFY · CONCEPT STORE</span>
@@ -96,6 +94,34 @@
             <p>A second concept build focused on balancing rich merchandising layouts against page speed — the two things that usually fight each other on Shopify.</p>
             <div class="project-tags"><span>Liquid</span><span>Shopify</span><span>Performance</span></div>
             <button class="btn btn-primary btn-sm" onclick="openProject('https://project-store-dmciwphg.myshopify.com/','rtowyu')">View live preview</button>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <span class="lock-badge">🔒 Password protected</span>
+            <img src="assets/projects/brandmadhir-thumb.svg" alt="Brandmadhir storefront preview" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <span class="cat">SHOPIFY · BRAND STORE</span>
+            <h3>Brandmadhir</h3>
+            <p>A brand-focused Shopify storefront with a bold hero banner and a clean product grid, set up to keep browsing and checkout simple.</p>
+            <div class="project-tags"><span>Liquid</span><span>Shopify</span><span>Theme Customization</span></div>
+            <button class="btn btn-primary btn-sm" onclick="openProject('https://brandmadhir-hjak4r1d.myshopify.com/','12345')">View live preview</button>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb">
+            <span class="lock-badge">🔒 Password protected</span>
+            <img src="assets/projects/goodsgreen-thumb.svg" alt="Goods Green storefront preview" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <span class="cat">SHOPIFY · GOODS STORE</span>
+            <h3>Goods Green</h3>
+            <p>A fresh, green-themed Shopify store for everyday goods, with an easy-to-scan collection layout and a lightweight, fast-loading theme.</p>
+            <div class="project-tags"><span>Liquid</span><span>Shopify</span><span>Performance</span></div>
+            <button class="btn btn-primary btn-sm" onclick="openProject('https://goods-green-ysimawpz.myshopify.com/','123')">View live preview</button>
           </div>
         </div>
       </div>
@@ -112,8 +138,7 @@
       <div class="project-grid">
         <div class="project-card reveal">
           <div class="project-thumb">
-            <span class="live-badge">🟢 Live</span>
-            <img src="assets/projects/zenora-thumb.svg" alt="Zenora WordPress service business site preview">
+            <img src="assets/projects/zenora-thumb.svg" alt="Zenora WordPress service business site preview" style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="project-body">
             <span class="cat">WORDPRESS · SERVICE BUSINESS</span>
@@ -126,8 +151,7 @@
 
         <div class="project-card reveal reveal-delay-1">
           <div class="project-thumb">
-            <span class="live-badge">🟢 Live</span>
-            <img src="assets/projects/zofonix-thumb.svg" alt="Zofonix digital marketing agency site preview">
+            <img src="assets/projects/zofonix-thumb.svg" alt="Zofonix digital marketing agency site preview" style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="project-body">
             <span class="cat">WORDPRESS · AGENCY SITE</span>
